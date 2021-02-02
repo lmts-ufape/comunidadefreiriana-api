@@ -6,7 +6,7 @@ export default class Admin {
     id: number; 
     
     @Column()
-    user: string;
+    email: string;
 
     @Column()
     password: string;

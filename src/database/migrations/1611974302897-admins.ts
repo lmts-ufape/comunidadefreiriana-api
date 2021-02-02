@@ -15,7 +15,7 @@ export class admins1611974302897 implements MigrationInterface {
                     generationStrategy: 'increment',
                 },
                 {
-                    name: 'user',
+                    name: 'email',
                     type: 'text'
                 },
                 {
