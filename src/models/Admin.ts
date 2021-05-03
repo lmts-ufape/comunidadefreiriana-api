@@ -1,11 +1,11 @@
-import { Entity, Column, PrimaryGeneratedColumn, BeforeInsert, BeforeUpdate} from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn, BeforeInsert, BeforeUpdate } from 'typeorm';
 import bcrypt from 'bcryptjs';
 
 @Entity('admins')
 export default class Admin {
     @PrimaryGeneratedColumn('increment')
-    id: number; 
-    
+    id: number;
+
     @Column()
     email: string;
 
@@ -14,8 +14,8 @@ export default class Admin {
 
     @BeforeInsert()
     @BeforeUpdate()
-    hashPassword(){
+    hashPassword() {
         this.password = bcrypt.hashSync(this.password);
     }
-    
+
 }

@@ -86,6 +86,16 @@ export class createInstituicoes1608092505745 implements MigrationInterface {
                 {
                     name: 'info',
                     type: 'text'
+                },
+                {
+                    name: 'autorizado',
+                    type: 'boolean',
+                    default: false,
+                },
+                {
+                    name: 'confirmacaoEmail',
+                    type: 'boolean',
+                    default: false,
                 }
             ],
         }))

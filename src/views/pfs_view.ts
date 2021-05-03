@@ -23,6 +23,8 @@ export default{
            latitude:pf.latitude,
            longitude:pf.longitude,
            images: imagesView.renderMany(pf.images),
+           autorizado: pf.autorizado,
+           confirmacaoEmail: pf.confirmacaoEmail
         };
     },
     renderMany(pfs: Pf[]) {

@@ -59,6 +59,12 @@ export default class Pf {
     @Column()
     longitude: number;
 
+    @Column()
+    autorizado: boolean;
+
+    @Column()
+    confirmacaoEmail: boolean;
+
     @OneToMany(() => Image, image => image.pf, {
         cascade: ['insert', 'update']
     })
